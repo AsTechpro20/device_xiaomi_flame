@@ -1212,7 +1212,6 @@ vendor/bin/init.qcom.efs.sync.sh
 vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qcom.sh
 vendor/bin/init.qcrild.sh
-vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/init/hw/init.qti.ufs.rc
 vendor/etc/init/vendor.qti.smp2p.rc
 
