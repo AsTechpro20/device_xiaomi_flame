@@ -1206,13 +1206,10 @@ vendor/lib64/vendor.qti.ims.uceaidlservice-V1-ndk.so;MODULE_SUFFIX=_vendor
 
 # Init
 vendor/bin/init.class_main.sh
-vendor/bin/init.crda.sh
-vendor/bin/init.mdm.sh
 vendor/bin/init.qcom.coex.sh
 vendor/bin/init.qcom.early_boot.sh
 vendor/bin/init.qcom.efs.sync.sh
 vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qcom.sdio.sh
 vendor/bin/init.qcom.sh
 vendor/bin/init.qcrild.sh
 vendor/etc/init/hw/init.qcom.factory.rc
