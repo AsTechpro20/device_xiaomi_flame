@@ -1573,11 +1573,6 @@ vendor/lib64/vendor.qti.hardware.radio.lpa-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook-V1-ndk.so
 vendor/lib64/vendor.qti.syshealthmon-V1-ndk.so
 
-# QCOM system daemon
-vendor/bin/qcom-system-daemon
-vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/lib64/libsubsystem_control.so
-
 # QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
