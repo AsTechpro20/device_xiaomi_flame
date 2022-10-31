@@ -272,6 +272,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayFlame \
     SystemUIOverlayFlame \
     TelephonyOverlayFlame \
+    ApertureResFlame \
     WifiOverlayFlame
 
 PRODUCT_PACKAGES += \
@@ -298,6 +299,9 @@ $(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-f
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
+
+# Camera
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Sensors
 PRODUCT_PACKAGES += \
