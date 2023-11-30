@@ -1,0 +1,23 @@
+# All firmware from flame-user 16 BP2A.250605.031.A3 OS3.0.302.0.WGUINXM release-keys, unless pinned
+
+abl.img;AB
+aop.img;AB
+aop_config.img;AB
+bluetooth.img;AB
+cpucp.img;AB
+devcfg.img;AB
+dsp.img;AB
+featenabler.img;AB
+hyp.img;AB
+imagefv.img;AB
+keymaster.img;AB
+modem.img;AB
+multiimgqti.img;AB
+qupfw.img;AB
+qweslicstore.img;AB
+shrm.img;AB
+tz.img;AB
+uefisecapp.img;AB
+xbl.img;AB
+xbl_config.img;AB
+xbl_ramdump.img;AB
