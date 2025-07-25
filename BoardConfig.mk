@@ -70,6 +70,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 BOARD_KERNEL_CMDLINE := \
     log_buf_len=2M \
+    sysctl.kernel.firmware_config.force_sysfs_fallback=1 \
     swinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
 
