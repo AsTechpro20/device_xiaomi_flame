@@ -214,6 +214,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayFlame \
     FrameworkResOverlayFlame \
+    Launcher3OverlayFlame \
     SettingsOverlayFlame \
     SystemUIOverlayFlame \
     TelephonyOverlayFlame \
