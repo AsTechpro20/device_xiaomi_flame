@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/breeze',
+    'device/xiaomi/flame',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -86,7 +86,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'breeze',
+    'flame',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

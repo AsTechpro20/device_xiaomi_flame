@@ -17,7 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
+$(call inherit-product, vendor/xiaomi/flame/flame-vendor.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)

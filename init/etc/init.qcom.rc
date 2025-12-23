@@ -210,9 +210,11 @@ on boot
     # limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
-    # chown for flashlight
-    chown system system sys/class/camera/factory_test_flash/rear_flash
-    chmod 0664 sys/class/camera/factory_test_flash/rear_flash
+    #modify permission of block_size node and stm node
+    chown -h vendor_qdss /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chmod 660 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chown -h vendor_qdss /sys/bus/coresight/reset_source_sink
+    chmod 660 /sys/bus/coresight/reset_source_sink
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -282,18 +284,12 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-    # add permission to catch DFS log
-    mkdir /data/vendor/wlan_logs 0777 root shell
-
     # Create the directories used by WiGig Sensing
     mkdir /data/vendor/sensing 0770 system wifi
 
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
     chown radio radio /data/vendor/connectivity
-
-    # Create directory used by audio subsystem
-    mkdir /data/vendor/audio 0770 audio audio
 
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
@@ -417,7 +413,8 @@ service vendor.ssr_setup /system/vendor/bin/ssr_setup
 service vendor.ss_ramdump /vendor/bin/subsystem_ramdump 3
     class main
     user system
-    group system everybody root sdcard_rw
+    group system root media_rw everybody
+    capabilities NET_ADMIN
     ioprio rt 4
     disabled
 
@@ -482,8 +479,6 @@ on property:sys.boot_completed=1
     setprop lmkd.reinit 1
     chown media audio /sys/kernel/aud_dev/state
     write /sys/devices/virtual/cvp/cvp/boot 1
-    chmod 0777 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
-    chmod 0777 /dev/byte-cntr
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -737,23 +732,28 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
+service vendor.atfwd-long /vendor/bin/ATFWD-daemon-long
+    class late_start
+    user system
+    group system radio
+
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
     user system
     group system
     disabled
 
-service diag_mdlog_start /system/vendor/bin/diag_mdlog
+service diag_mdlog_start /system/vendor/bin/diag_mdlog -q 0x2006 -j 1 -u -c -i -n 40 -s 500
     class late_start
     user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw
+    group system oem_2901 oem_2902 oem_2905 vendor_qdss sdcard_rw sdcard_r media_rw
     disabled
     oneshot
 
 service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
     class late_start
     user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw
+    group system oem_2901 oem_2902 oem_2905 vendor_qdss sdcard_rw sdcard_r media_rw
     disabled
     oneshot
 

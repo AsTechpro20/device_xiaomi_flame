@@ -5,9 +5,9 @@
 #
 
 # Inherit from the proprietary version
--include vendor/xiaomi/breeze/BoardConfigVendor.mk
+-include vendor/xiaomi/flame/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/breeze
+DEVICE_PATH := device/xiaomi/flame
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -53,7 +53,7 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := breeze
+TARGET_BOOTLOADER_BOARD_NAME := flame
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -133,7 +133,7 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/vendor_dlkm/module
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := breeze,breezein
+TARGET_OTA_ASSERT_DEVICE := flame
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -183,10 +183,10 @@ BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Screen density
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 320
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2025-11-01
+VENDOR_SECURITY_PATCH := 2025-07-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk

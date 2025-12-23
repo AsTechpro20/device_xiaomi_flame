@@ -1,6 +1,6 @@
 # Audio
 audio.offload.min.duration.secs=30
-media.stagefright.audio.deep=true
+media.stagefright.audio.deep=false
 
 # RKPD
 remote_provisioning.enable_rkpd=true
