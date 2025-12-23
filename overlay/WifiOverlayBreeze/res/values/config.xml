@@ -92,6 +92,6 @@
     <string  translatable="false" name="config_wifiSoftap2gChannelList"></string>
 
      <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Breeze</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Flame</string>
 
 </resources>
