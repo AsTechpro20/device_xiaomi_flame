@@ -1,0 +1,11 @@
+# Audio
+vendor.audio.timecheck_timeoutMs=10000
+
+# Display
+vendor.display.force_tonemapping=1
+
+# Qti
+ro.vendor.qti.va_odm.support=1
+
+# Radio
+persist.vendor.radio.dynamic_sar=1
