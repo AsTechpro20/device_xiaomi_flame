@@ -33,10 +33,18 @@ PRODUCT_PACKAGES += \
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 34
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk
+
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
