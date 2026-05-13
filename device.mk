@@ -109,12 +109,11 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-		$(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs.xml \
-		$(LOCAL_PATH)/configs/media/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_c2_audio.xml \
-		$(LOCAL_PATH)/configs/media/media_codecs_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_ravelin.xml \
-		$(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles.xml \
-		$(LOCAL_PATH)/configs/media/media_profiles_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_ravelin.xml \
-		$(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_V1_0.xml \
+	$(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs.xml \
+	$(LOCAL_PATH)/configs/media/media_codecs_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_ravelin.xml \
+	$(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles.xml \
+	$(LOCAL_PATH)/configs/media/media_profiles_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_ravelin.xml \
+	$(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_V1_0.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
