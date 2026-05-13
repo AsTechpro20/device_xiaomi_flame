@@ -104,6 +104,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/audio_policy_configuration.xml
 
+# Media
+PRODUCT_COPY_FILES += \
+		$(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs.xml \
+		$(LOCAL_PATH)/configs/media/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_c2_audio.xml \
+		$(LOCAL_PATH)/configs/media/media_codecs_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_ravelin.xml \
+		$(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles.xml \
+		$(LOCAL_PATH)/configs/media/media_profiles_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_ravelin.xml \
+		$(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_profiles_V1_0.xml \
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:64
