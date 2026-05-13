@@ -21,6 +21,9 @@ $(call inherit-product, device/xiaomi/flame/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/flame/flame-vendor.mk)
 
+# Signing Builds
+-include vendor/lineage-priv/keys/keys.mk
+
 ## Device identifier
 PRODUCT_DEVICE := flame
 PRODUCT_NAME := lineage_flame
