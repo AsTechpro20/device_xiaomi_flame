@@ -77,7 +77,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 $(call soong_config_set, qtilocation, feature_nhz, false)
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_flame
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_xiaomi_flame)
 
 # Kernel
 BOARD_KERNEL_PAGESIZE := 4096
