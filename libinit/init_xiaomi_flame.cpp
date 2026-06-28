@@ -3,10 +3,8 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-
 #include <libinit_variant.h>
 #include <libinit_utils.h>
-
 #include "vendor_init.h"
 
 #define FINGERPRINT_POCO_IN    "POCO/flame_p_in/flame:15/AQ3A.250604.001/OS3.0.301.0.WGUINXM:user/release-keys"
@@ -16,8 +14,7 @@
 
 // Redmi 14C 5G (India)
 static const variant_info_t flame_redmi_in_info = {
-    .sku_value = "c3fin",
-
+    .hwc_value = "c3fin",
     .brand = "Redmi",
     .device = "flame",
     .marketname = "Redmi 14C 5G",
@@ -28,8 +25,7 @@ static const variant_info_t flame_redmi_in_info = {
 
 // POCO M7 5G (India)
 static const variant_info_t flame_poco_info = {
-    .sku_value = "c3finp",
-
+    .hwc_value = "c3finp",
     .brand = "POCO",
     .device = "flame",
     .marketname = "POCO M7 5G",
@@ -40,8 +36,7 @@ static const variant_info_t flame_poco_info = {
 
 // Redmi 14C 5G (Global)
 static const variant_info_t flame_redmi_gl_info = {
-    .sku_value = "c3fgl",
-
+    .hwc_value = "c3fgl",
     .brand = "Redmi",
     .device = "flame",
     .marketname = "Redmi 14C 5G",
@@ -52,8 +47,7 @@ static const variant_info_t flame_redmi_gl_info = {
 
 // Redmi 14R 5G (China)
 static const variant_info_t flame_redmi_cnt_info = {
-    .sku_value = "c3fcnt",
-
+    .hwc_value = "c3fcnt",
     .brand = "Redmi",
     .device = "flame",
     .marketname = "Redmi 14R 5G",
@@ -64,8 +58,7 @@ static const variant_info_t flame_redmi_cnt_info = {
 
 // Redmi 14R 5G (China alt)
 static const variant_info_t flame_redmi_cn_info = {
-    .sku_value = "c3fcn",
-
+    .hwc_value = "c3fcn",
     .brand = "Redmi",
     .device = "flame",
     .marketname = "Redmi 14R 5G",
