@@ -12,7 +12,7 @@
 
 using android::base::GetProperty;
 
-#define HWC_PROP "ro.boot.hwc"
+#define HWC_PROP "ro.boot.product.hardware.sku"
 #define BOARDID_PROP "ro.boot.boardid"
 
 void search_variant(const std::vector<variant_info_t> variants) {
