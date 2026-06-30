@@ -268,7 +268,6 @@ PRODUCT_PACKAGES += \
     Launcher3OverlayFlame \
     LineageSDKOverlayFlame \
     LineageSettingsOverlayFlame \
-    LineageSettingsProviderOverlayFlame \
     SettingsOverlayFlame \
     SystemUIOverlayFlame \
     TelephonyOverlayFlame \
