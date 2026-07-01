@@ -285,6 +285,11 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Reverse space for gapps
+ifeq ($(TARGET_INCLUDE_RESERVED_SIZE),true)
+$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
+endif
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti

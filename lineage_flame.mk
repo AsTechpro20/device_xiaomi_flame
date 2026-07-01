@@ -13,8 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit common lineage configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
-
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/flame/device.mk)
 
@@ -23,6 +21,9 @@ $(call inherit-product, vendor/xiaomi/flame/flame-vendor.mk)
 
 # Signing Builds
 -include vendor/lineage-priv/keys/keys.mk
+
+# Enable reserved size for vanilla builds
+TARGET_INCLUDE_RESERVED_SIZE := true
 
 ## Device identifier
 PRODUCT_DEVICE := flame
