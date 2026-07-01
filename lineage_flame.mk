@@ -25,6 +25,13 @@ $(call inherit-product, vendor/xiaomi/flame/flame-vendor.mk)
 # Enable reserved size for vanilla builds
 TARGET_INCLUDE_RESERVED_SIZE := true
 
+#Enable Blur
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_BLUR := true
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+
 ## Device identifier
 PRODUCT_DEVICE := flame
 PRODUCT_NAME := lineage_flame
