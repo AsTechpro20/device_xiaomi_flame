@@ -83,6 +83,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*media_codecs_(google_audio|vendor_audio|google_telephony|google_c2).*\n', ''),
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1'),
+    'vendor/etc/seccomp_policy/qesdksec.policy': blob_fixup()
+        .add_line_if_missing('lseek: 1'),
     'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
         .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
