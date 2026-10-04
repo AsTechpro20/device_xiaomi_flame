@@ -1,0 +1,8 @@
+allow rild vendor_wifimac_prop:property_service set;
+allow rild vendor_btmac_prop:property_service set;
+
+get_prop(rild, vendor_wifimac_prop)
+get_prop(rild, vendor_btmac_prop)
+
+set_prop(rild, vendor_deviceid_prop)
+set_prop(rild, vendor_sno_prop)

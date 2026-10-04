@@ -1,0 +1,17 @@
+# Battery
+type vendor_sysfs_qcom_battery, fs_type, sysfs_type;
+
+# Display
+type vendor_sysfs_displayfeature, fs_type, sysfs_type;
+
+# Fingerprint
+type vendor_sysfs_fpc_attr, fs_type, sysfs_type;
+
+# Mac Address
+type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
+
+# Proximity
+type proc_tp_virtual_proximity, fs_type, proc_type;
+
+# Thermal
+type thermal_data_file, data_file_type, file_type;

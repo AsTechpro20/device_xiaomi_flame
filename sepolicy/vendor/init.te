@@ -1,0 +1,5 @@
+allow init hal_fingerprint_default:process { ptrace };
+
+set_prop(vendor_init, vendor_fp_prop)
+
+domain_auto_trans(init, mi_thermald_exec, mi_thermald)

@@ -1,0 +1,14 @@
+# Fingerprint
+typeattribute hal_fingerprint_service hal_service_type;
+typeattribute hal_fingerprint_service protected_service;
+typeattribute hal_fingerprint_service service_manager_type;
+
+# Mlipay
+attribute hal_mlipay;
+attribute hal_mlipay_server;
+attribute hal_mlipay_client;
+
+# Micharge
+attribute hal_micharge;
+attribute hal_micharge_server;
+attribute hal_micharge_client;

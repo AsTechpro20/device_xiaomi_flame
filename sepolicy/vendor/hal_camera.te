@@ -1,0 +1,9 @@
+allow hal_camera_default ctl_start_prop:property_service set;
+
+get_prop(hal_camera_default, ctl_start_prop)
+get_prop(hal_camera_default, vendor_soc_id_prop)
+
+set_prop(hal_camera_default, vendor_camera_sensor_prop)
+
+dontaudit hal_camera graphics_device:dir search;
+dontaudit hal_camera_default default_prop:file read;

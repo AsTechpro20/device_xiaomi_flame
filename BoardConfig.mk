@@ -81,9 +81,6 @@ BOARD_BOOTCONFIG := \
     androidboot.load_modules_parallel=true \
 	androidboot.vendor.qspa=true
 
-BOARD_BOOTCONFIG += \
-    androidboot.selinux=permissive
-
 # Kernel (prebuilt)
 PREBUILT_PATH := device/xiaomi/flame-kernel
 TARGET_NO_KERNEL_OVERRIDE := true
@@ -168,6 +165,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor security patch
 VENDOR_SECURITY_PATCH := 2026-03-05

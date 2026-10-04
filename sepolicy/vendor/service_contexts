@@ -1,0 +1,9 @@
+# Charge
+vendor.xiaomi.hardware.micharge.IMiCharge/default u:object_r:hal_micharge_service:s0
+
+# Fingerprint
+com.fingerprints.fpc.extension.IFpcExtension/default u:object_r:hal_fingerprint_service:s0
+vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel/default u:object_r:hal_fingerprint_service:s0
+
+# Mlipay
+vendor.xiaomi.hardware.mlipay.IMlipayService/default u:object_r:hal_mlipay_service:s0
