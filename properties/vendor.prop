@@ -6,7 +6,6 @@ af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.video=true
 ro.audio.flinger_standbytime_ms=2000
-ro.audio.monitorRotation=true
 vendor.audio.adm.buffering.ms=2
 vendor.audio.c2.preferred=true
 vendor.audio.feature.a2dp_offload.enable=true
