@@ -1892,6 +1892,17 @@ odm/firmware/novatek_ts_mp_txd.bin
 odm/firmware/novatek_ts_mp_xinli.bin
 odm/firmware/novatek_ts_mp_xl7.bin
 
+# Touchscreen (recovery)
+odm/firmware/focaltech_ts_fw_hkc.bin:recovery/root/lib/firmware/focaltech_ts_fw_hkc.bin
+odm/firmware/novatek_ts_fw_boe.bin:recovery/root/lib/firmware/novatek_ts_fw_boe.bin
+odm/firmware/novatek_ts_fw_txd.bin:recovery/root/lib/firmware/novatek_ts_fw_txd.bin
+odm/firmware/novatek_ts_fw_xinli.bin:recovery/root/lib/firmware/novatek_ts_fw_xinli.bin
+odm/firmware/novatek_ts_fw_xl7.bin:recovery/root/lib/firmware/novatek_ts_fw_xl7.bin
+odm/firmware/novatek_ts_mp_boe.bin:recovery/root/lib/firmware/novatek_ts_mp_boe.bin
+odm/firmware/novatek_ts_mp_txd.bin:recovery/root/lib/firmware/novatek_ts_mp_txd.bin
+odm/firmware/novatek_ts_mp_xinli.bin:recovery/root/lib/firmware/novatek_ts_mp_xinli.bin
+odm/firmware/novatek_ts_mp_xl7.bin:recovery/root/lib/firmware/novatek_ts_mp_xl7.bin
+
 # Trusted Execution Environment connector
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
