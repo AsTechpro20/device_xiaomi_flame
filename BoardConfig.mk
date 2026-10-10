@@ -222,3 +222,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/flame/BoardConfigVendor.mk
+
+# Dolby
+include hardware/dolby/BoardConfig.mk
