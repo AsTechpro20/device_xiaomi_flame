@@ -9,10 +9,10 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT_POCO_IN    "POCO/flame_p_in/flame:15/AQ3A.250604.001/OS3.0.301.0.WGUINXM:user/release-keys"
-#define FINGERPRINT_REDMI_IN   "Redmi/flame_in/flame:15/AQ3A.250604.001/OS3.0.301.0.WGUINXM:user/release-keys"
-#define FINGERPRINT_REDMI_GL   "Redmi/blaze_global/blaze:15/AQ3A.250604.001/OS3.0.301.0.WGUINXM:user/release-keys"
-#define FINGERPRINT_REDMI_CN   "Redmi/flame/flame:15/AQ3A.250604.001/OS3.0.301.0.WGUINXM:user/release-keys"
+#define FINGERPRINT_POCO_IN    "POCO/flame_p_in/flame:16/BP2A.250605.031.A3/OS3.0.302.0.WGUINXM:user/release-keys"
+#define FINGERPRINT_REDMI_IN   "Redmi/flame_in/flame:16/BP2A.250605.031.A3/OS3.0.302.0.WGUINXM:user/release-keys"
+#define FINGERPRINT_REDMI_GL   "Redmi/blaze_global/blaze:16/BP2A.250605.031.A3/OS3.0.302.0.WGUINXM:user/release-keys"
+#define FINGERPRINT_REDMI_CN   "Redmi/flame/flame:16/BP2A.250605.031.A3/OS3.0.302.0.WGUINXM:user/release-keys"
 
 // Redmi 14C 5G (India)
 static const variant_info_t flame_redmi_in_info = {
