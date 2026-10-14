@@ -201,7 +201,7 @@ DEVICE_MANIFEST_RAVELIN_FILES := \
     $(DEVICE_PATH)/vintf/manifest_ravelin.xml \
     hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/parrot/manifest_audio_qti_services.xml
 
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix_aidl.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/compatibility_matrix.device.xml \
